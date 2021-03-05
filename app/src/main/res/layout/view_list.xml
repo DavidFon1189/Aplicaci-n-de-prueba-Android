@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/d20dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/lnl_root">
+
+    <ImageView
+        android:id="@+id/imgv_compania"
+        android:layout_width="@dimen/d80dp"
+        android:layout_height="@dimen/d80dp"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/ic_logo"/>
+
+    <TextView
+        android:id="@+id/tv_tiempo_aire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo aire"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.companiasapp.Constants
+package com.example.companiasapp.Utils
 
 object Const {
     const val TIMER = 5000L

@@ -85,7 +85,6 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/contrasena"
                     android:inputType="textPassword"
-                    android:maxLength="15"
                     android:textColor="@color/blue"
                     android:text="@={loginviewmodel.password}"/>
 

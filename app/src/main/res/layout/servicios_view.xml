@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lnl_root_servicios"
+    android:padding="@dimen/d10dp"
+    android:layout_marginTop="@dimen/d10dp"
+    android:layout_marginBottom="@dimen/d10dp">
+
+    <TextView
+        android:id="@+id/tv_servicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="RECARGAS"
+        android:textSize="@dimen/d20sp"/>
+
+</LinearLayout>

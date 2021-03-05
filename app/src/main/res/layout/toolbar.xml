@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/d30dp"
+            android:layout_height="@dimen/d30dp"
+            android:background="@drawable/ic_logo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/d20sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/img_menu_hamburguer"
+            android:layout_width="@dimen/d30dp"
+            android:layout_height="@dimen/d30dp"
+            android:layout_marginEnd="@dimen/d10dp"
+            android:layout_marginRight="@dimen/d10dp"
+            android:background="@drawable/ic_logo"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

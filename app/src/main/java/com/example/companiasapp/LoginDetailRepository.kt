@@ -16,22 +16,21 @@ class LoginDetailRepository constructor(retrofitClient: RetrofitClient ){
         retrofitClientClient = retrofitClient
     }
 
-    fun loginDetail(user: String, password: String): LiveData<String>{
-        val loginResponse = MutableLiveData<String>()
+    fun loginDetail(user: String, password: String): LiveData<LoginResponse>{
+        val loginResponse = MutableLiveData<LoginResponse>()
         retrofitClientClient?.provideAPIService()?.userLogin(user, password, "password")?.enqueue(object:
             Callback<LoginResponse> {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 if (response.isSuccessful) {
-                    loginResponse.value = response.body().toString()
+                    loginResponse.value = response.body()
                 } else {
-                    loginResponse.value = response.errorBody()?.string()
+//                    loginResponse.value = response.errorBody()?.string()
                 }
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                loginResponse.value = t.message
+//                loginResponse.value = t.message
             }
-
         })
         return loginResponse
     }
