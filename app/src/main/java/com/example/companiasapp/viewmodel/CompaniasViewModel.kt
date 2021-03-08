@@ -1,8 +1,12 @@
-package com.example.companiasapp
+package com.example.companiasapp.viewmodel
 
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.companiasapp.model.CompaniasData
+import com.example.companiasapp.model.CompaniasList
+import com.example.companiasapp.model.ServiciosData
+import com.example.companiasapp.model.ServiciosList
 
 class CompaniasViewModel: ViewModel() {
 
@@ -28,33 +32,30 @@ class CompaniasViewModel: ViewModel() {
     }
 
     fun getListData() {
-        val owner = Owner("")
         val arrayList: ArrayList<CompaniasData> = ArrayList()
-        arrayList.add(CompaniasData("CLARO", "Tiempo aire", owner))
-        arrayList.add(CompaniasData("CLARO", "Megas", owner))
-        arrayList.add(CompaniasData("CLARO", "Megas", owner))
+        arrayList.add(CompaniasData("CLARO", "Tiempo Aire", "url"))
+        arrayList.add(CompaniasData("CLARO", "Megas", "url"))
+        arrayList.add(CompaniasData("CLARO", "Megas", "url"))
         val recyclerList = CompaniasList(arrayList)
         companiasListData.value = recyclerList
     }
 
     fun getListDataEntel() {
-        val owner = Owner("")
         val arrayList: ArrayList<CompaniasData> = ArrayList()
-        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", owner))
-        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", owner))
-        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", owner))
-        arrayList.add(CompaniasData("ENTEL", "Megas", owner))
+        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", "url"))
+        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", "url"))
+        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", "url"))
+        arrayList.add(CompaniasData("ENTEL", "Megas", "url"))
         val recyclerList = CompaniasList(arrayList)
         companiasListDataEntel.value = recyclerList
     }
 
     fun getListDataTuenti() {
-        val owner = Owner("")
         val arrayList: ArrayList<CompaniasData> = ArrayList()
-        arrayList.add(CompaniasData("ENTEL", "Megas", owner))
-        arrayList.add(CompaniasData("ENTEL", "Megas", owner))
-        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", owner))
-        arrayList.add(CompaniasData("ENTEL", "Megas", owner))
+        arrayList.add(CompaniasData("ENTEL", "Megas", "url"))
+        arrayList.add(CompaniasData("ENTEL", "Megas", "url"))
+        arrayList.add(CompaniasData("ENTEL", "Tiempo Aire", "url"))
+        arrayList.add(CompaniasData("ENTEL", "Megas", "url"))
         val recyclerList = CompaniasList(arrayList)
         companiasListDataTuenti.value = recyclerList
     }

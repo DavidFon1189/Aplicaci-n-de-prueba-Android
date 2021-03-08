@@ -1,4 +1,4 @@
-package com.example.companiasapp
+package com.example.companiasapp.model
 
 data class ServiciosList(
     val items: ArrayList<ServiciosData>
@@ -13,11 +13,11 @@ data class CompaniasList(
     )
 
 data class CompaniasData(
-    val titulo: String,
+    val compania: String,
     val description: String,
-    val owner: Owner
-    )
+    internal val img: String
+)
 
-data class Owner(
-    var avatar_url: String
-    )
+data class MontoRecargaList(
+    val items: ArrayList<String>
+)

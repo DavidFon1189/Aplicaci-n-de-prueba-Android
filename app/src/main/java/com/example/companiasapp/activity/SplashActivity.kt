@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.example.companiasapp.Utils.Const.TIMER
+import com.example.companiasapp.utils.Const.TIMER
 import com.example.companiasapp.R
 
 class SplashActivity: AppCompatActivity() {
@@ -14,6 +14,7 @@ class SplashActivity: AppCompatActivity() {
 
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }, TIMER)
     }
 

@@ -11,9 +11,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.companiasapp.InterfaceListener
-import com.example.companiasapp.LoginViewModel
+import com.example.companiasapp.viewmodel.LoginViewModel
 import com.example.companiasapp.R
-import com.example.companiasapp.Utils.DialogManager
+import com.example.companiasapp.utils.DialogManager
 import com.example.companiasapp.databinding.MainActivityBinding
 import com.example.companiasapp.model.LoginResponse
 
@@ -33,21 +33,27 @@ class MainActivity: AppCompatActivity(), InterfaceListener {
     override fun succes(loginResponse: LiveData<LoginResponse>) {
         loginResponse.observe(this, Observer {
             preferences = getSharedPreferences("SHARED_PREFERENCES", Context.MODE_PRIVATE)
-            val editor: SharedPreferences.Editor = preferences.edit()
-            editor.putString("access_token", it.accessToken)
-            editor.putString("token_type", it.tokenType)
-            editor.putString("refresh_token", it.refreshToken)
-            editor.putInt("expires_in", it.expiresIn)
-            editor.putString("scope", it.scope)
-            editor.putString("expires_in", it.jti)
-            editor.apply()
-            startActivity(Intent(this, RecargasActivity::class.java))
+            if (it != null) {
+                val editor: SharedPreferences.Editor = preferences.edit()
+                editor.putString("access_token", it.accessToken)
+                editor.putString("token_type", it.tokenType)
+                editor.putString("refresh_token", it.refreshToken)
+                editor.putInt("expires_in", it.expiresIn)
+                editor.putString("scope", it.scope)
+                editor.putString("expires_in", it.jti)
+                editor.apply()
+                startActivity(Intent(this, RecargasActivity::class.java))
+                finish()
+            } else {
+                Toast.makeText(this, "Bad credentials", Toast.LENGTH_SHORT).show()
+            }
             DialogManager.progressBar(this).dismiss()
         })
     }
 
     override fun error(message: String) {
        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        DialogManager.progressBar(this).dismiss()
     }
 
     override fun load() {

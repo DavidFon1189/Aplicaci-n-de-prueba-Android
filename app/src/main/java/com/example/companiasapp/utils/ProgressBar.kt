@@ -1,4 +1,4 @@
-package com.example.companiasapp.Utils
+package com.example.companiasapp.utils
 
 import android.app.Dialog
 import android.os.Bundle

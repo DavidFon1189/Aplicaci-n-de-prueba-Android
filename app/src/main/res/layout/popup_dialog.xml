@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_popup"
+    android:orientation="vertical"
+    android:padding="@dimen/d20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/d20dp"
+            android:layout_height="@dimen/d20dp"
+            android:background="@drawable/ic_agente"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/d8dp"
+            android:layout_marginStart="@dimen/d5dp"
+            android:layout_marginLeft="@dimen/d5dp"
+            android:text="223545" />
+
+        <ImageView
+            android:layout_width="@dimen/d20dp"
+            android:layout_height="@dimen/d20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d20dp"
+            android:layout_marginLeft="@dimen/d20dp"
+            android:background="@drawable/ic_clock"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/d8dp"
+            android:layout_marginStart="@dimen/d5dp"
+            android:layout_marginLeft="@dimen/d5dp"
+            android:text="11:48:15" />
+
+        <ImageView
+            android:layout_width="@dimen/d20dp"
+            android:layout_height="@dimen/d20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d20dp"
+            android:layout_marginLeft="@dimen/d20dp"
+            android:background="@drawable/ic_date"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/d8dp"
+            android:layout_marginStart="@dimen/d5dp"
+            android:layout_marginLeft="@dimen/d5dp"
+            android:text="05/03/2021" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d20dp"
+        android:gravity="center"
+        android:text="@string/serealizara_recarga"
+        android:textSize="@dimen/d16sp" />
+
+    <TextView
+        android:id="@+id/compania_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:text="CLARO"
+        android:textSize="@dimen/d30sp" />
+
+    <TextView
+        android:id="@+id/tv_num_telefonico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d10dp"
+        android:gravity="center"
+        android:text="@string/numero_telefono"
+        android:textSize="@dimen/d16sp" />
+
+    <TextView
+        android:id="@+id/tv_telefono_recarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="5591117175"
+        android:textSize="@dimen/d30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d10dp"
+        android:gravity="center"
+        android:text="@string/monto_a_recargar"
+        android:textSize="@dimen/d16sp" />
+
+    <TextView
+        android:id="@+id/tv_monto_recarga_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$100.00"
+        android:textSize="@dimen/d30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_leyenda_recarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d20dp"
+        android:gravity="center"
+        android:text="@string/leyenda_recarga_popup"
+        android:textSize="@dimen/d10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/d30dp">
+
+        <Button
+            android:id="@+id/btn_cancelar_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/cancelar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_aceptar_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/aceptar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/d10dp"
+            android:layout_marginStart="@dimen/d10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

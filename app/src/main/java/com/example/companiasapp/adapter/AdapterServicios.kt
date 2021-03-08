@@ -3,13 +3,11 @@ package com.example.companiasapp.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.companiasapp.CompaniasData
 import com.example.companiasapp.R
-import com.example.companiasapp.ServiciosData
+import com.example.companiasapp.model.ServiciosData
 
 class AdapterServicios(
     var getServicioList: ArrayList<ServiciosData>

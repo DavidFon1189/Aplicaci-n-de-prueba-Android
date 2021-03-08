@@ -13,7 +13,8 @@
         android:theme="@style/Theme.CompaniasApp">
 
         <activity android:name="com.example.companiasapp.activity.SplashActivity"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -25,6 +26,9 @@
             android:screenOrientation="portrait"/>
 
         <activity android:name=".activity.RecargasActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.MontoRecargaActivity"
             android:screenOrientation="portrait" />
     </application>
 

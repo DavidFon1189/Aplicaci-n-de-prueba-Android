@@ -4,4 +4,18 @@
     <string name="contrasena">Contraseña</string>
     <string name="iniciar_sesion">INICIAR SESIÓN</string>
     <string name="version">1.0</string>
+    <string name="telefono">Teléfono</string>
+    <string name="monto_recargar">Monto</string>
+    <string name="continuar">CONTINUAR</string>
+    <string name="leyenda_recarga">Venta de 3.00 a 100.00 con incremento de 1.00</string>
+    <string name="selecciona_monto">Selecciona Monto</string>
+    <string name="serealizara_recarga">Se realizara una recarga</string>
+    <string name="numero_telefono">Número telefónico</string>
+    <string name="monto_a_recargar">Monto a recargar</string>
+    <string name="leyenda_recarga_popup">Realice su pago oportunamente en la sucursal de referencia</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="recarga_con_exito">La recarga se ha realizado con éxito</string>
+    <string name="recargas_toolbar">RECARGAS</string>
+    <string name="seguro_cerrar_sesion">¿Estás seguro que quieres cerrar tu sesión?</string>
 </resources>

@@ -14,6 +14,7 @@ data class LoginResponse(
     @SerializedName("scope")
     val scope: String = "",
     @SerializedName("jti")
-    val jti: String = ""
+    val jti: String = "",
+    var error: String = "Bad credentials",
 
-)
+    )
